@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/login.css" />
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" />
+  </head>
+  <body>
+    <!-- logo -->
+
+    <div class="layui-main logo">
+      <img src="/assets/images/logo.png" alt="" />
+    </div>
+    <!-- 登陆最大盒子 -->
+    <div class="login-box">
+      <!-- 后台管理title -->
+      <div class="title"></div>
+      <!-- =============登陆页面================-->
+      <form class="layui-form loginFrom" action="">
+        <!-- 用户名 -->
+        <div class="layui-form-item">
+          <input
+            type="text"
+            name="username"
+            required
+            lay-verify="required"
+            placeholder="请输入用户名"
+            autocomplete="off"
+            class="layui-input"
+          />
+        </div>
+        <!-- 密码 -->
+        <div class="layui-form-item">
+          <input
+            type="password"
+            name="password"
+            required
+            lay-verify="required"
+            placeholder="请输入密码"
+            autocomplete="off"
+            class="layui-input"
+          />
+        </div>
+        <!-- 登录按钮 -->
+        <button
+          class="layui-btn layui-btn-normal layui-btn-fluid"
+          lay-submit
+          lay-filter="formDemo"
+        >
+          登 录
+        </button>
+        <!-- 点击注册 -->
+        <a href="javascript:;" class="register">立即注册</a>
+      </form>
+      <!-- ================注册页面============= -->
+      <form class="layui-form registerFrom" action="" style="display: none">
+        <!-- 用户名 -->
+        <div class="layui-form-item">
+          <input
+            type="text"
+            name="username"
+            required
+            lay-verify="required"
+            placeholder="请输入用户名"
+            autocomplete="off"
+            class="layui-input"
+          />
+        </div>
+        <!-- 密码 -->
+        <div class="layui-form-item">
+          <input
+            type="password"
+            name="password"
+            required
+            lay-verify="required|pass"
+            placeholder="请输入密码"
+            autocomplete="off"
+            class="layui-input"
+            id="psd"
+          />
+        </div>
+        <div class="layui-form-item">
+          <input
+            type="password"
+            name="title"
+            required
+            lay-verify="required|pass|repassword"
+            placeholder="请再次确认密码"
+            autocomplete="off"
+            class="layui-input"
+          />
+        </div>
+        <!-- 注册按钮 -->
+        <button
+          class="layui-btn layui-btn-normal layui-btn-fluid"
+          lay-submit
+          lay-filter="formDemo"
+        >
+          注 册
+        </button>
+        <!-- 点击注册 -->
+        <a href="javascript:;" class="loginNow">立即登陆</a>
+      </form>
+    </div>
+    <!-- 引入jq -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 引入layui js文件 -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 引入自身js -->
+    <script src="/assets/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body{
+    background: url(/assets/images/login_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    padding: 0 30px;
+
+}
+.title{
+    height: 60px;
+    background: url(/assets/images/login_title.png) no-repeat center;
+}
+#login,#gotoRegi{
+    float: right;
+}
+.re{
+    position: relative;
+}
+.po{
+    position: absolute;
+top: 10px;
+left: 10px;
+  
+}
+.layui-input, .layui-textarea{
+    padding-left: 30px;
+}
